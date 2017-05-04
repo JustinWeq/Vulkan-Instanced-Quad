@@ -35,3 +35,9 @@ VkPhysicalDevice PhysicalDevice::GetPhysicalDevice()
 {
 	return m_physicalDevice;
 }
+
+//returns this objects physical device
+PhysicalDevice::operator VkPhysicalDevice()
+{
+	return m_physicalDevice;
+}
