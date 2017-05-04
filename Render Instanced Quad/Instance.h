@@ -13,6 +13,9 @@ public:
 	//Cleans up memory for dynamicly allocated memory
 	void destroy();
 
+	//Returns this Instance as a VkInstance
+	operator VkInstance();
+
 private:
 	//The vkinstance data
 	VkInstance m_instanceData;

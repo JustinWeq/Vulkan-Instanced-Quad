@@ -51,3 +51,10 @@ void Instance::destroy()
 	if (m_instanceData)
 		vkDestroyInstance(m_instanceData, NULL);
 }
+
+//Returns this Instance as a VkInstance
+Instance::operator VkInstance()
+{
+	//return the vk instance data
+	return m_instanceData;
+}
