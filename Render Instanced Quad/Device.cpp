@@ -1,9 +1,11 @@
 #include "Device.h"
+int m_queueFamilyIndex = NULL;
 // defualt constructor-- construct a new instance of Device
 Device::Device()
 {
 	//set the data to null
 	m_device = NULL;
+
 }
 
 //initializes the vk device
@@ -33,6 +35,8 @@ bool Device::Init(VkPhysicalDevice physicalDevice)
 		{
 			found = true;
 			queueInfo.queueFamilyIndex = i;
+			//store the queue family index
+			m_queueFamilyIndex = i;
 			break;
 		}
 	}
@@ -73,4 +77,11 @@ Device::operator VkDevice()
 {
 	//return the device data
 	return m_device;
+}
+
+//returns the queue family index
+int Device::GetQueueFamilyIndex()
+{
+	//return the queue family index
+	return m_queueFamilyIndex;
 }

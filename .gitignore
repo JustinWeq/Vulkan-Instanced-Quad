@@ -1,2 +1,14 @@
 #ignore open data base files
 *.opendb
+#ignore data base files
+*.db 
+#ignore suo files
+*.suo
+#ignore all log files
+*.log
+#ignore all garbade tlog files
+*.tlog
+#ignore all idb and pdb files
+*.idb
+*.pdb
+*.ilk

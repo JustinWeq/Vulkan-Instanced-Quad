@@ -2,6 +2,7 @@
 #include "Instance.h"
 #include "Device.h"
 #include "PhysicalDevice.h"
+#include "CommandBuffer.h"
 #include <Windows.h>
 int CALLBACK WinMain(HINSTANCE hinstance,HINSTANCE prevInstance,LPSTR args,int show)
 {
@@ -9,6 +10,7 @@ int CALLBACK WinMain(HINSTANCE hinstance,HINSTANCE prevInstance,LPSTR args,int s
 	Instance instance = Instance();
 	PhysicalDevice physicalDevice = PhysicalDevice();
 	Device device = Device();
+	CommandBuffer cmdBuffer = CommandBuffer();
 
 	//init the instance
 	returnCode = !instance.Init("Test Vulkan app");
@@ -18,6 +20,9 @@ int CALLBACK WinMain(HINSTANCE hinstance,HINSTANCE prevInstance,LPSTR args,int s
 
 	//init the device
 	returnCode = !device.Init(physicalDevice);
+
+	//init the comand buffer
+	returnCode = !cmdBuffer.Init(device);
 
 	//destroy the instance
 	instance.destroy();
