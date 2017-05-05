@@ -1,2 +1,8 @@
-﻿  Main.cpp
+﻿  CommandBuffer.cpp
+  Generating Code...
+  Compiling...
+  Device.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Main.cpp
   Render Instanced Quad.vcxproj -> D:\Programs\C++\Vulkan\RenderQuad\Render Instanced Quad\x64\Debug\Render Instanced Quad.exe

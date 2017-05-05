@@ -17,9 +17,13 @@ public:
 	//operator for implicitly using Device as a vk device
 	operator VkDevice();
 
+	//returns the queue family index
+	static int GetQueueFamilyIndex();
+
 private:
 
 	//the vk device data
 	VkDevice m_device;
+
 
 };

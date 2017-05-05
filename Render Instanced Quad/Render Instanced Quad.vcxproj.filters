@@ -27,6 +27,9 @@
     <ClCompile Include="Device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CommandBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Instance.h">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Device.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandBuffer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
