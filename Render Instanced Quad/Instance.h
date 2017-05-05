@@ -1,5 +1,6 @@
 #pragma once
 #include <vulkan.h>
+//used to manage a vk instance
 class Instance
 {
 public:
